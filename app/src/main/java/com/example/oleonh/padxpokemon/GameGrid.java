@@ -12,6 +12,7 @@ public class GameGrid {
     final private int ROCK = 2;
     final private int GRASS = 1;
     final private int GROUND = 0;
+    final private int PLAYER = 3;
     int playerX;
     int playerY;
     ArrayList<Pokemon> allPokemon = new ArrayList<>();
@@ -60,4 +61,10 @@ public class GameGrid {
         return false;
     }
 
+    public int getNumber(int x, int y){
+        return ground[x][y];
+    }
+    public void setPlayer(int x, int y){
+        ground[x][y] = PLAYER;
+    }
 }
