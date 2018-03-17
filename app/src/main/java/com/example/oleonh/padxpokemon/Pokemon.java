@@ -9,30 +9,59 @@ public class Pokemon {
     int defense;
     int agility;
     String type;
-<<<<<<< HEAD
-    String name
+    String name;
+    int health;
 
     public Pokemon (int att, int def, int agil, String type, Sting n){
         attack = att; defence = def; agility = agil; type = this.type;
-        name = n
+        name = n; health = 100;
     }
 
-
-
-=======
-
-    public Pokemon(){
-        attack = 10;
-        defense = 10;
-        agility = 10;
-        type = "Fire";
+    void damage(int amount){
+        health = health - amount;
     }
 
-    public Pokemon(int att, int def, int agi, String name){
-        attack = att;
-        defense = def;
-        agility = agi;
-        type = name;
+    boolean capture(){
+        int x = (int)(Math.Random() * health/10);
+        if (x == 1 || x == 2){
+            return true;
+        }
+        return false;
     }
->>>>>>> f012354b93680d1e26c1b297685e0ee13c7676e8
+
+    // returns 1 if superior, 0 if equal and -1 if weaker
+    // @param type of the other pokemon
+    int typeIsSuperior(String t){
+        if(type.equals("grass") || type.equals("flying")){
+            if (t.equals("fire")){
+                return -1;
+            } else if (type.equals("water")){
+                return 1;
+            }
+            return 0;
+        } else if (type.equals("fire")) {
+            if (t.equals("fire")){
+                return -1;
+            } else if (type.equals("water")){
+                return 1;
+            }
+            return 0;
+        } else if (type.equals("water")) {
+            if (t.equals("fire")){
+                return 1;
+            } else if (type.equals("grass")){
+                return -1;
+            }
+            return 0;
+        } else if (type.equals("dark")) {
+            return 0;
+        } else if (type.equals("flying")) {
+            if (t.equals("grass")){
+                return 1;
+            }
+            return 0;
+        }
+        return 0;
+    }
+
 }
