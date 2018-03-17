@@ -8,6 +8,8 @@ public class GameGrid {
     final private int ROCK = 2;
     final private int GRASS = 1;
     final private int GROUND = 0;
+    int playerX;
+    int playerY;
 
 
     public GameGrid(){
@@ -25,5 +27,12 @@ public class GameGrid {
                  }
             }
         }
+        playerX = 10;
+        playerY = 10;
     }
+
+    void playerMove(int x1, int y1){
+        playerX = x1; playerY = y1;
+    }
+
 }
