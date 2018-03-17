@@ -7,4 +7,13 @@ public class Pokemon {
     int defense;
     int agility;
     String type;
+    String name
+
+    public Pokemon (int att, int def, int agil, String type, Sting n){
+        attack = att; defence = def; agility = agil; type = this.type;
+        name = n
+    }
+
+
+
 }
