@@ -4,12 +4,13 @@ package com.example.oleonh.padxpokemon;
  * Created by oleonh on 3/17/18.
  */
 
-public class GameGrid {
+public class  GameGrid {
     int[][] ground;
     boolean[][] playerlocation;
     final private int ROCK = 2;
     final private int GRASS = 1;
     final private int GROUND = 0;
+    final private int PLAYER = 3;
     int playerX;
     int playerY;
 
@@ -29,16 +30,24 @@ public class GameGrid {
                  }
             }
         }
-        playerX = 10;
-        playerY = 10;
+        setPlayer(10, 10);
     }
 
     void playerMove(int x1, int y1){
         playerX = x1; playerY = y1;
     }
+<<<<<<< HEAD
 
     public static int getArrayValue(int x, int y){
         return ground[x][y];
     }
 
+=======
+    public int getNumber(int x, int y){
+        return ground[x][y];
+    }
+    public void setPlayer(int x, int y){
+        ground[x][y] = PLAYER;
+    }
+>>>>>>> origin/master
 }
