@@ -5,6 +5,18 @@ package com.example.oleonh.padxpokemon;
  */
 
 import android.graphics.*;
+<<<<<<< HEAD
+
+public class World {
+    public World(){
+        for(int i = 0; i < 20; i++){
+            for(int j = 0; j < 20; j++){
+                if(GameGrid.getArrayValue(i, j) == 2){
+
+                }else if(GameGrid.getArrayValue(i, j) == 1){
+
+                }else{
+=======
 import android.media.Image;
 import android.widget.ImageView;
 
@@ -28,5 +40,10 @@ public class World {
             }
         }
     }
+>>>>>>> origin/master
 
+                }
+            }
+        }
+    }
 }

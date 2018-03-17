@@ -61,6 +61,10 @@ public class GameGrid {
         return false;
     }
 
+    public int getArrayValue(int x, int y){
+        return ground[x][y];
+    }
+
     public int getNumber(int x, int y){
         return ground[x][y];
     }
