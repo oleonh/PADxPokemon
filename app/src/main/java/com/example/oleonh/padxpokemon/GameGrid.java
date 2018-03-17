@@ -46,9 +46,8 @@ public class GameGrid {
     }
 
     void fightRandomPokemon(){
-
+        Command.fight(allPokemon.get(0));
     }
-
 
     void playerMove(int x1, int y1){
         playerX = x1; playerY = y1;

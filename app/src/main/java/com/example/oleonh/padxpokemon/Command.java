@@ -6,4 +6,11 @@ package com.example.oleonh.padxpokemon;
 
 public class Command {
 
+    GameGrid grid;
+    Player player;
+
+    public static void fight(Pokemon p){
+
+    }
+
 }
