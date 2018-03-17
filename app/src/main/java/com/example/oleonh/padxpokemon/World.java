@@ -37,29 +37,9 @@ public class World {
                 } else {
 
                 }
-<<<<<<< Updated upstream
-=======
-            }
-        }
-        initialize();
-    }
-
-    private void initialize(){
-        for(int i = 0; i < array.length; i++){
-            for (int j = 0; j < array[i].length; j++){
-                if(GameGrid.getArrayValue(i, j) == 2){
-                    ImageView imgv = new ImageView
-                }else if(GameGrid.getArrayValue(i, j) == 1){
-
-                }else{
-
-                }
             }
         }
     }
->>>>>>> Stashed changes
 
-            }
-        }
-    }
+
 }
