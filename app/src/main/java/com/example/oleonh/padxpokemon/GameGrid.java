@@ -37,4 +37,8 @@ public class GameGrid {
         playerX = x1; playerY = y1;
     }
 
+    public static int getArrayValue(int x, int y){
+        return ground[x][y];
+    }
+
 }
