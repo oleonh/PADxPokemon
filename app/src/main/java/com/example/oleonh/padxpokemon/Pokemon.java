@@ -12,8 +12,8 @@ public class Pokemon {
     String name;
     int health;
 
-    public Pokemon (int att, int def, int agil, String type, Sting n){
-        attack = att; defence = def; agility = agil; type = this.type;
+    public Pokemon (int att, int def, int agil, String type, String n){
+        attack = att; defense = def; agility = agil; type = this.type;
         name = n; health = 100;
     }
 
