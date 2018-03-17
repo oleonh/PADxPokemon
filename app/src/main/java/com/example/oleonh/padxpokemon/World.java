@@ -24,6 +24,10 @@ public class World {
     public World(){
         grid = new GameGrid();
         array = new ImageView[WIDTH][HEIGHT];
+        initialize();
+    }
+
+    private void initialize(){
         for(int i = 0; i < 20; i++) {
             for (int j = 0; j < 20; j++) {
                 if (grid.getArrayValue(i, j) == 2) {
@@ -33,29 +37,8 @@ public class World {
                 } else {
 
                 }
-            }
-        }
-        initialize();
-    }
 
-    private void initialize(){
-        for(int i = 0; i < array.length; i++){
-            for (int j = 0; j < array[i].length; j++){
-                if(GameGrid.getArrayValue(i, j) == 2){
-
-<<<<<<< HEAD
-                }else if(GameGrid.getArrayValue(i, j) == 1){
-
-                }else{
-
-                }
             }
         }
     }
-
-=======
-            }
-        }
-    }
->>>>>>> origin/master
 }
