@@ -1,4 +1,10 @@
-public class Player{
+package com.example.oleonh.padxpokemon;
+
+/**
+ * Created by kamehameya on 3/17/18.
+ */
+
+public class Player {
     String name;
     Araylist<Pokemon> pokemen = new Arraylist<>();
 
