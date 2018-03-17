@@ -3,4 +3,8 @@
  */
 
 public class Pokemon {
+    int attack;
+    int defense;
+    int agility;
+    String type;
 }
