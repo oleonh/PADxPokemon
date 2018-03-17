@@ -1,5 +1,6 @@
 package com.example.oleonh.padxpokemon;
 
+import java.lang.Math;
 /**
  * Created by oleonh on 3/17/18.
  */
@@ -22,7 +23,7 @@ public class Pokemon {
     }
 
     boolean capture(){
-        int x = (int)(Math.Random() * health/10);
+        int x = (int)(Math.random() * health/10);
         if (x == 1 || x == 2){
             return true;
         }
