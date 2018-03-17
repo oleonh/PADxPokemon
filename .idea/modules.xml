@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://C:\Users\princ\Desktop\Project\PadxPokemon\PadxPokemon.iml" filepath="C:\Users\princ\Desktop\Project\PadxPokemon\PadxPokemon.iml" />
       <module fileurl="file://$PROJECT_DIR$/PadxPokemon.iml" filepath="$PROJECT_DIR$/PadxPokemon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/PadxPokemon-app.iml" filepath="$PROJECT_DIR$/app/PadxPokemon-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
